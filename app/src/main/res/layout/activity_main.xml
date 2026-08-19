@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvLabelA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Time A"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPontosA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/btnPontoA"
+        app:layout_constraintEnd_toEndOf="@id/tvLabelA"
+        app:layout_constraintStart_toStartOf="@id/tvLabelA"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelA" />
+
+    <Button
+        android:id="@+id/btnPontoA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/btnTrucoA"
+        app:layout_constraintEnd_toEndOf="@id/tvLabelA"
+        app:layout_constraintStart_toStartOf="@id/tvLabelA" />
+
+    <Button
+        android:id="@+id/btnTrucoA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Truco (+3)"
+        app:layout_constraintBottom_toTopOf="@id/btnReiniciar"
+        app:layout_constraintEnd_toEndOf="@id/tvLabelA"
+        app:layout_constraintStart_toStartOf="@id/tvLabelA" />
+
+    <TextView
+        android:id="@+id/tvLabelB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Time B"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLabelA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPontosB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/btnPontoB"
+        app:layout_constraintEnd_toEndOf="@id/tvLabelB"
+        app:layout_constraintStart_toStartOf="@id/tvLabelB"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelB" />
+
+    <Button
+        android:id="@+id/btnPontoB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/btnTrucoB"
+        app:layout_constraintEnd_toEndOf="@id/tvLabelB"
+        app:layout_constraintStart_toStartOf="@id/tvLabelB" />
+
+    <Button
+        android:id="@+id/btnTrucoB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Truco (+3)"
+        app:layout_constraintBottom_toTopOf="@id/btnReiniciar"
+        app:layout_constraintEnd_toEndOf="@id/tvLabelB"
+        app:layout_constraintStart_toStartOf="@id/tvLabelB" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
