@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId = "br.edu.ifsp.scl.sc3047792.trucoscoreboard"
         minSdk = 26
-        targetSdk = 37
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
